@@ -54,6 +54,6 @@ Se probó la **API del formulario de contacto** y se validó el correcto almacen
 ---
 
 ## 👩‍💻 Autora
-**Lluvia Aguilar – QA Junior**  
+**Reyes Aguilar – QA Junior**  
 
 
