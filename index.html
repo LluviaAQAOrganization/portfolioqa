@@ -42,90 +42,65 @@
 
     </section>
 
-    <section id="proyectos">
-      <h2 id="tituloproyectos">
-        <i class="fa fa-folder-open"></i> Proyectos
+    <section id="projects">
+      <h2 id="tituloprojects">
+        <i class="fa fa-folder-open"></i> Projects
       </h2>
 
       <h3>
-        <a id="linkproyectoapi" href="https://yourwebsite.com" target="_blank">Pagina Web</a>
-        – QA Manual y Automation
+        <a id="linkproyectoapi" href="https://web-qa.dev.adalab.es/" target="_blank">Web Page</a>
+        – Web Vida Verde
       </h3>
-      <p>
-  Realicé el aseguramiento de la calidad de una aplicación web ya desarrollada,
-  trabajando en equipo bajo <strong>metodologías ágiles Scrum</strong>. La gestión del
-  trabajo se realizó mediante <strong>sprints semanales</strong> utilizando
-  <strong>Jira</strong>, participando activamente en las ceremonias de
-  <strong>Sprint Planning</strong>, <strong>dailys</strong> y <strong>Sprint Review</strong>
-  al final de cada sprint.
-</p>
-
+      <p><strong>Project:</strong> Web Vida Verde</p>
+<p><strong>Testing Environment:</strong> <a href="https://web-qa.dev.adalab.es" target="_blank">https://web-qa.dev.adalab.es</a></p>
+<p><strong>Test Leads / QA Team:</strong> Team 1 (Lluvia, Ana, Carmen, Cristina)</p>
+  <h3>Testing Scope</h3>
 <p>
-  Diseñé las pruebas de las historias de usuario siguiendo la metodología
-  <strong>BDD</strong>, partiendo de los criterios de aceptación definidos. Se crearon
-  escenarios en lenguaje <strong>Gherkin</strong> para disponer de pruebas legibles y
-  comprensibles para todo el equipo, gestionándolas con <strong>AssertThat</strong> para
-  mantener la <strong>trazabilidad</strong> entre requisitos, pruebas y resultados dentro
-  de <strong>Jira</strong>. Las pruebas se ejecutaron por historia de usuario y se
-  registraron los resultados en entornos web y móviles.
+  The verification process focused on ensuring the correct functionality and usability of the website across different environments. Testing covered both desktop and mobile versions:
 </p>
+<ul>
+  <li><strong>Desktop Environments:</strong> Compatibility and rendering tests across Chrome, Firefox, and Opera browsers.</li>
+  <li><strong>Mobile Environments:</strong> Responsive design and user flow testing on Android devices.</li>
+  <li><strong>Validated Key Features:</strong> Homepage, catalog navigation and filters, informational sections ("About Us"), shopping cart management, and the complete checkout flow.</li>
+</ul>
 
+<h3>Methodology and Tools</h3>
 <p>
-  Durante cada sprint se realizaron <strong>pruebas funcionales</strong> y, al final del
-  mismo, <strong>pruebas exploratorias</strong> para identificar defectos no cubiertos por
-  los casos definidos. Los errores detectados se reportaron en <strong>Jira</strong>,
-  vinculándolos a la historia de usuario correspondiente para asegurar la correcta
-  trazabilidad entre requisitos, pruebas y defectos.
+  Work was conducted under the Agile (Scrum) framework, executing test cycles within each Sprint as new user stories were integrated. The technology ecosystem utilized included:
 </p>
+<ul>
+  <li><strong>Project Management & Kanban Board:</strong> Jira, enabling tracking of the lifecycle for every task and issue.</li>
+  <li><strong>Test Management & Execution:</strong> AssertThat, used to structure test cases and ensure comprehensive test coverage.</li>
+  <li><strong>Documentation & Test Plans:</strong> Confluence, serving as the centralized repository for strategy and technical analysis.</li>
+</ul>
 
-<p>
-  Al cierre de cada sprint se preparó la <strong>release</strong> en <strong>Jira</strong>
-  y se documentó en <strong>Confluence</strong> la información relacionada con la entrega,
-  incluyendo la documentación completa del <strong>plan de pruebas</strong>, resultados
-  de ejecución y estado de calidad del producto.
-</p>
+<h3>Executed Testing Types</h3>
+<ul>
+  <li><strong>Functional Testing:</strong> Rigorous validation of the acceptance criteria specified in each user story.</li>
+  <li><strong>Regression Testing:</strong> Execution of test suites after each deployment to guarantee that new features did not negatively impact existing functionalities.</li>
+  <li><strong>Exploratory Testing:</strong> Free navigation sessions aimed at detecting anomalous behaviors or unexpected bugs outside established test scripts.</li>
+</ul>
 
+<h3>Project Documentation</h3>
 <p>
-  Tras la release, se identificaron los <strong>flujos principales</strong> de la
-  aplicación y se automatizaron las pruebas de <strong>regresión</strong> utilizando
-  <strong>Playwright</strong> y <strong>Pytest</strong> con <strong>Python</strong>. Estas
-  pruebas se integraron en un flujo de <strong>integración continua</strong> con
-  <strong>GitHub Actions</strong>, configurado para ejecutar automáticamente la regresión
-  de forma semanal, alineada con el cierre de cada sprint.
+  The strategy design, objectives, acceptance criteria, and final results of this quality assurance cycle are fully detailed in the team repository:
 </p>
-      <h3>
-        <a id="linkproyectoportafolio" href="https://yourwebsite.com">Portafolio QA</a>
-        – Desarrolladora Web y QA en Testing de APIs
-      </h3>
-     <p>
-  Desarrollé un portafolio web utilizando <strong>HTML5</strong>, <strong>CSS3</strong> y
-  <strong>JavaScript</strong>, integrando un formulario conectado a una
-  <strong>API</strong> generada con <strong>Supabase</strong>. Se diseñaron las tablas
-  de la base de datos y se realizaron consultas en <strong>SQL</strong> para la
-  inserción y consulta de datos de prueba del formulario.
+<p>
+  <strong><a href="https://bootcampqa-equipo1.atlassian.net/wiki/spaces/E1/pages/98306/Plan+de+Pruebas+-+Web+Vida+Verde" target="_blank" style="color: #02524e; text-decoration: underline;">View Full Test Plan in Confluence</a></strong>
 </p>
+ 
+<h3>Key Metrics & Outcomes</h3>
+<ul>
+  <li><strong>Defect Detection:</strong> Identified and documented over 20 bugs (ranging from critical checkout blockers to minor UI alignment issues) using Jira for complete lifecycle tracking.</li>
+  <li><strong>Test Coverage:</strong> Achieved comprehensive coverage of core user flows by executing more than 40 manual test cases mapped via AssertThat.</li>
+  <li><strong>Team Collaboration:</strong> Collaborated effectively within a cross-functional Agile team, ensuring all severe issues were resolved before the end of each Sprint.</li>
+</ul>
 
-<p>
-  Realicé <strong>testing de APIs</strong> utilizando <strong>Postman</strong>, creando
-  pruebas para las peticiones <strong>GET</strong> (consulta),
-  <strong>POST</strong> (creación), <strong>PATCH</strong> (edición) y
-  <strong>DELETE</strong> (eliminación). Se implementaron tests que validan códigos de
-  respuesta positivos, negativos y de <strong>autenticación</strong>, así como la
-  correcta estructura y contenido de las respuestas.
-</p>
-
-<p>
-  Además, se implementó un flujo de <strong>integración continua</strong> con
-  <strong>GitHub Actions</strong>, configurando <strong>Newman</strong> para ejecutar
-  automáticamente las pruebas creadas en <strong>Postman</strong> en cada cambio del
-  repositorio.
-</p>
-      
     </section>
 
     <section id="educacion">
       <h2 id="tituloeducacion">
-        <i class="fa fa-graduation-cap"></i> Educación
+        <i class="fa fa-graduation-cap"></i> Education
       </h2>
 
       <h3>Bootcamp QA – Academia</h3>
