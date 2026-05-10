@@ -1,15 +1,38 @@
+
+body, h1, h2, h3, p, a, li, span {
+    font-family: 'Atma', system-ui, sans-serif !important;
+}
+
+.fa, .fab, .fas, .far {
+    font-family: 'FontAwesome' !important; 
+}
+
 body {
-  font-family: Verdana, Arial, sans-serif;
-  font-size: 1rem;
-  color: black;
-  margin: 0;
+    font-size: 22px;
+    line-height: 1.6;
 }
 
 header {
-  background-color: rgb(7, 167, 153);
+  background-color: rgb(168, 146, 202);
   color: white;
-  padding: 5rem;
+  padding: 2rem 0;
   text-align: center;
+}
+
+#minombre {
+    font-size: 2.5rem !important;
+    margin-bottom: 5px;
+}
+
+#titulo {
+    font-size: 1.8rem !important;
+    font-weight: 300;
+    margin-top: 0;
+}
+
+nav ul li a {
+    font-size: 1.4rem !important;
+    font-weight: bold;
 }
 
 main {
@@ -57,7 +80,7 @@ p {
 }
 
 a {
-  color: #02524e;
+  color: #3f0252;
   text-decoration: none;
 }
 
@@ -72,7 +95,19 @@ section {
 h2 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  color: #34495e;
+  color: #3f0252;
+}
+
+#tituloaboutme .fa {
+    font-size: 1.8rem; 
+    vertical-align: middle; 
+    margin-right: 10px; 
+}
+
+#titulolenguajes .fa {
+    font-size: 1.8rem;
+    vertical-align: middle;
+    margin-right: 10px;
 }
 
 /* FORMULARIO */
@@ -95,7 +130,7 @@ select {
 button {
   width: 100%;
   padding: 1rem;
-  background-color: #02463a;
+  background-color: #3f0252;
   color: white;
   border: none;
   border-radius: 0.5rem;
