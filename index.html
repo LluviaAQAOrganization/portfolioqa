@@ -173,15 +173,15 @@
     <i class="fa fa-envelope"></i> Contact
   </h2>
   <form id="contactForm" onsubmit="return enviarFormulario(event)">
-    <input id="name" type="text" placeholder="Name" />
-    <input id="email" type="email" placeholder="Email" />
-    <select id="message">
+    <input id="name" type="text" placeholder="Name" required />
+    <input id="email" type="email" placeholder="Email" required />
+    <select id="message" required>
       <option value="">---</option>
       <option value="info">Information</option>
       <option value="job">Job Opportunity</option>
       <option value="other">Other</option>
     </select>
-    <textarea id="mensaje" rows="4" placeholder="Write your message"></textarea>
+    <textarea id="mensaje" rows="4" placeholder="Write your message" required maxlength="500"></textarea>
     <button id="enviar" type="submit">
       <i class="fa fa-paper-plane"></i> Send
     </button>
