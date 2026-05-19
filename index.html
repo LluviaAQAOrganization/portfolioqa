@@ -7,10 +7,8 @@
   <meta name="description" content="Portfolio QA Junior Lluvia Aguilar" />
   <meta name="author" content="Lluvia Aguilar" />
   <title>Lluvia Aguilar - Portfolio</title>
-  <title>Lluvia Aguilar - Portfolio</title>
 <link href="https://fonts.googleapis.com/css?family=Atma" rel="stylesheet">
 <link href="style.css" rel="stylesheet" />
-  <link href="style.css" rel="stylesheet" />
   <!-- Importar Font Awesome para los iconos -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
@@ -50,7 +48,7 @@
         <i class="fa fa-folder-open"></i> Projects
       </h2>
 
-      <h>
+      <h3>
         <a id="linkproyectoapi" href="https://web-qa.dev.adalab.es/" target="_blank">Web Page</a>
         – Web Vida Verde
       </h3>
@@ -115,7 +113,6 @@
     and documenting comprehensive <strong>test plans</strong> in <strong>Confluence</strong> under <strong>Agile (Scrum) frameworks</strong>.
   </p>
   
-  <p>
     Acquiring technical proficiency in backend verification through <strong>API Testing</strong> with 
     <strong>Postman</strong> and data validation using <strong>SQL</strong> queries. The curriculum also introduces 
     foundational skills in test automation frameworks using <strong>Python</strong>, <strong>Playwright</strong>, and 
@@ -173,9 +170,9 @@
     <i class="fa fa-envelope"></i> Contact
   </h2>
   <form id="contactForm" onsubmit="return enviarFormulario(event)">
-    <input id="name" type="text" placeholder="Name" required />
+    <input id="nombre" type="text" placeholder="Name" required />
     <input id="email" type="email" placeholder="Email" required />
-    <select id="message" required>
+    <select id="asunto" required>
       <option value="">---</option>
       <option value="info">Information</option>
       <option value="job">Job Opportunity</option>
@@ -186,6 +183,8 @@
       <i class="fa fa-paper-plane"></i> Send
     </button>
   </form>
+  <button id="verMensajes" onclick="mostrarDatos()">Ver mensajes</button>
+<table id="formsTable"></table>
   <p id="formMessage"></p>
 </section>
 
@@ -193,6 +192,6 @@
   <footer>
     <p>&copy; All rights reserved.</p>
   </footer>
+  <script src="script.js" defer></script>
 </body>
-<script src="script.js" defer></script>
 </html>

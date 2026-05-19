@@ -1,6 +1,6 @@
 // 1. CAMBIAR POR URL Y KEY DE TU API
-const SUPABASE_URL = 'https://ifgzperqnxoomyvvytzr.supabase.co/rest/v1/forms';
-const SUPABASE_API_KEY = 'sb_publishable_s4C8y1rgb321cEF5B969MA_3jMwVpNJ';
+const SUPABASE_URL = 'https://iwdierxmgildaqzycppj.supabase.co';
+const SUPABASE_API_KEY = 'sb_publishable_IN6V-2TZs7Ii5aEC8e85Qw_Nvc2rr3V';
 
 
 //ENVIAR DATOS DE UN FORMULARIO A UNA API CON POST
@@ -10,10 +10,10 @@ function enviarFormulario(event) {
 
   //3. CAMBIA SI ES NECESARIO LOS DATOS, DEBES INDICAR EL NOMBRE DEL CAMPO QUE QUIERES MANDAR A LA API, Y EL ID DEL FORMULARIO QUE TIENE ESE DATO.
   var data = {
-    name: document.getElementById('nombre').value, //campo name de la api, se obtiene del input del formulario con id nombre
-    email: document.getElementById('email').value, //campo email de la api, se obtiene del input del formulario con id email
-    subject: document.getElementById('asunto').value, //campo subject de la api, se obtiene del input del formulario con id asunto
-    message: document.getElementById('mensaje').value //campo message de la api, se obtiene del input del formulario con id mensaje
+    name: document.getElementById('nombre').value,
+    email: document.getElementById('email').value,
+    subject: document.getElementById('asunto').value,
+    message: document.getElementById('mensaje').value
   }
   postAPI(data);
 
@@ -35,7 +35,7 @@ function mostrarMensajeError(){
 
 //FUNCION GENERICA PARA ENVIAR DATOS A UNA API POST Y MOSTRAR UN MENSAJE DE ERROR O EXITO. NO NECESITAS CAMBIAR NADA, FUNCIONA SIEMPRE.
 function postAPI (data){
-  fetch(SUPABASE_URL, {
+  fetch(SUPABASE_URL + '/rest/v1/formlluviaaguilar', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -115,7 +115,7 @@ function mostrarDatos() {
 
   //FUNCIÓN PARA OBTENER LOS DATOS DE LA API CON GET. GENERICA NO NECESITA CAMBIOS.
 function getAPI() {
-  return fetch(SUPABASE_URL, {
+  return fetch(SUPABASE_URL + '/rest/v1/formlluviaaguilar', {
     method: 'GET',
     headers: {
       'apikey': SUPABASE_API_KEY,
