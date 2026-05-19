@@ -57,3 +57,12 @@ jobs:
         with:
           name: postman-collection
           path: collection.json
+          
+      - name: Upload Postman collection as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: postman-environment
+          path: environment.json
+          
+
+     
