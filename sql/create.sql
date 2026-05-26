@@ -1,9 +1,8 @@
 CREATE TABLE formlluviaaguilar (
   id SERIAL PRIMARY KEY ,
-  name VARCHAR  (100) NOT NULL ,
+  name VARCHAR (100),
   age INTEGER CHECK (age >= 18),
-  city VARCHAR (100),
   email VARCHAR (100) UNIQUE NOT NULL,
-  language VARCHAR (100) DEFAULT 'SPANISH',
-  subject VARCHAR (100) NOT NULL
+  subject VARCHAR (100) NOT NULL,
+  message VARCHAR (500) NOT NULL
 );
