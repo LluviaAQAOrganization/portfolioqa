@@ -53,10 +53,10 @@ jobs:
           path: report.html
 
       - name: Upload Postman collection as artifact
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: postman-collection
-          if: always()
           path: collection.json
           
       - name: Upload Postman collection as artifact
