@@ -93,23 +93,22 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
     <p>Filtra los registros donde campo sea igual a <code>&lt;valor&gt;</code>.</p>
     <p>Campos disponibles para filtrar:</p>
     <ul>
-      <li>id</li><li>name</li><li>age</li><li>city</li><li>email</li><li>language</li><li>subject</li>
+      <li>id</li><li>name</li><li>age</li><li>email</li><li>subject</li><li>message</li>
     </ul>
 
     <h2>POST - formlluviaaguilar - Crear nuevo</h2>
     <p><span class="method POST">POST</span> <code>https://supabase.com/dashboard/project/iwdierxmgildaqzycppj/editor/18470/rest/v1/formlluviaaguilar</code></p>
     <p>Crea un nuevo registro. Campos disponibles:</p>
     <ul>
-      <li><code>name</code> -  (obligatorio)</li><li><code>age</code> - opcional</li><li><code>city</code> - opcional</li><li><code>email</code> -  (obligatorio)</li><li><code>language</code> - opcional</li><li><code>subject</code> -  (obligatorio)</li>
+      <li><code>name</code> - opcional</li><li><code>age</code> - opcional</li><li><code>email</code> -  (obligatorio)</li><li><code>subject</code> -  (obligatorio)</li><li><code>message</code> -  (obligatorio)</li>
     </ul>
     <p><strong>Body de ejemplo:</strong></p>
     <pre>{
   "name": "",
   "age": "",
-  "city": "",
   "email": "",
-  "language": "",
-  "subject": ""
+  "subject": "",
+  "message": ""
 }</pre>
 
     <h2>PATCH - formlluviaaguilar - Editar </h2>
@@ -118,11 +117,10 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
     <pre>{
   "name": "<nuevo string="">",
   "age": "<nuevo string="">",
-  "city": "<nuevo string="">",
   "email": "<nuevo string="">",
-  "language": "<nuevo string="">",
-  "subject": "<nuevo string="">"
-}</nuevo></nuevo></nuevo></nuevo></nuevo></nuevo></pre>
+  "subject": "<nuevo string="">",
+  "message": "<nuevo string="">"
+}</nuevo></nuevo></nuevo></nuevo></nuevo></pre>
 
     <h2>DELETE - formlluviaaguilar - Eliminar </h2>
     <p><span class="method DELETE">DELETE</span> <code>https://supabase.com/dashboard/project/iwdierxmgildaqzycppj/editor/18470/rest/v1/formlluviaaguilar?id=eq.&lt;id&gt;</code></p>
