@@ -35,7 +35,7 @@ function mostrarMensajeError(){
 
 //FUNCION GENERICA PARA ENVIAR DATOS A UNA API POST Y MOSTRAR UN MENSAJE DE ERROR O EXITO. NO NECESITAS CAMBIAR NADA, FUNCIONA SIEMPRE.
 function postAPI (data){
-  fetch(SUPABASE_URL + '/rest/v1/formlluviaaguilar', {
+  fetch(SUPABASE_URL, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -115,7 +115,7 @@ function mostrarDatos() {
 
   //FUNCIÓN PARA OBTENER LOS DATOS DE LA API CON GET. GENERICA NO NECESITA CAMBIOS.
 function getAPI() {
-  return fetch(SUPABASE_URL + '/rest/v1/formlluviaaguilar', {
+  return fetch(SUPABASE_URL, {
     method: 'GET',
     headers: {
       'apikey': SUPABASE_API_KEY,
